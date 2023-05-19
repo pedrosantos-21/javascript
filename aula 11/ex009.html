@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de nacionalidade</title>
+</head>
+<body>
+    <h1>de onde você vem?</h1>
+    <input type="text" name="txtnal" id="txtnal">
+    <input type="button" value="verificar" onclick="Calcular()"> 
+    <div id="res">
+
+    </div>
+    <script>
+        function Calcular(){
+            var txtn=document.querySelector("input#txtnal")
+            var res=document.querySelector("div#res")
+            var país = 'EUA'
+             res.innerHTML=`<p>Você vem <strong>${país}</strong>`
+             if(país == 'Brasil') {
+                 res.innerHTML += `<p>Você é <strong>brasileiro</strong></p>`
+            }
+
+        }
+    </script>
+</body>
+</html>
